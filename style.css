@@ -1,0 +1,42 @@
+html {
+  font-family: 'times new roman', times, serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: italic;
+  color: #121212;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.fig-span {
+  color: #666;
+  line-height: 20px;
+  font-size: 0.9375rem;
+}
+
+.fig-span-small {
+  color: #888;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+  font-size: 0.7rem;
+}
+
+.article-font > p {
+  font-size: 20px;
+  color: #333;
+  line-height: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+.footer-links {
+  list-style: outside none none;
+}
