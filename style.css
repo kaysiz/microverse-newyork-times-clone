@@ -206,7 +206,7 @@ aside {
   flex-wrap: wrap;
 }
 
-.aside-content h3 {
+.aside-content > h3 {
   width: 110px;
   margin-top: 10px;
 }
@@ -379,4 +379,38 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin: 30px 360px 20px 360px;
+}
+
+.main-container {
+  margin-left: 20%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 272px);
+  grid-gap: 15px;
+}
+
+.container-image {
+  width: 272px;
+}
+
+.editor-section {
+  margin-left: 20%;
+}
+
+.sidebar-links > h3 {
+  font-size: 19px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 15px 0px;
+  line-height: 23px;
+  color: #666;
+}
+
+.sidebar-links > a {
+  text-decoration: none;
 }
