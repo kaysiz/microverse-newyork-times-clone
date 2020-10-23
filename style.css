@@ -41,7 +41,7 @@ p {
   margin-bottom: 20px;
 }
 
-#main-nav {
+.main-nav {
   position: fixed;
   top: 0;
   display: flex;
@@ -53,7 +53,12 @@ p {
   border-bottom: 1px solid rgb(199, 199, 199);
 }
 
-#nav-section1 > a {
+.nav-section1 {
+  align-items: center;
+  width: 20%;
+}
+
+.nav-section1 > a {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-size: 14.25px;
@@ -61,7 +66,12 @@ p {
   font-weight: bold;
 }
 
-#nav-section1 {
+.nav-section1 > button {
+  border: none;
+  background-color: white;
+}
+
+.nav-section1 {
   display: flex;
   justify-content: space-between;
   width: 180px;
@@ -102,51 +112,53 @@ h1 {
   align-items: center;
 }
 
-#pic-1 {
-  max-width: 100%;
-  width: 945px;
-}
-
 .header-author {
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  width: 626px;
 }
 
 .author {
   font-family: helvetica, arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
+  margin-top: 50px;
 }
 
-#author-link {
+.author-link {
   text-decoration: underline rgb(194, 194, 194);
   color: #333;
 }
 
-#author-link:hover {
+.author-link:hover {
   text-decoration: none;
 }
 
-#date-icons {
+.date-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#icons {
+.icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 250px;
+  border: 5px solid white;
+}
+
+.icon-button {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .article-text {
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-}
+  margin: 0 auto;
+  width: 33%;
+} 
 
 .article-font > p {
   font-size: 22px;
@@ -160,18 +172,29 @@ h1 {
 
 aside {
   float: right;
+  position: absolute;
+  right:250px;
+  top: 1950px;
+  width: 210px;
+  height: 321px;
 }
 
-#pic-2 {
-  height: auto;
-  max-width: 100%;
-  width: 945px;
+.edit-pics {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  padding-bottom: 10px;
 }
 
-#pic-3 {
-  height: auto;
-  max-width: 100%;
-  width: 600px;
+.aside-desc {
+  text-decoration: none;
+  color: #000;
+  font-weight: lighter;
+  font-size: 13.4px;
+}
+
+.aside-desc:hover {
+  text-decoration: underline;
 }
 
 .span-date {
@@ -189,7 +212,7 @@ aside {
   text-decoration: none;
 }
 
-#free-articles {
+.free-articles {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -201,7 +224,7 @@ aside {
   color: #333;
 }
 
-#free-articles > a {
+.free-articles > a {
   text-decoration: none;
   color: #326891;
   font-weight: bold;
@@ -209,6 +232,18 @@ aside {
 
 .aside-pics {
   width: 75px;
+  margin: 10px;
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aside-content h3 {
+  width: 110px;
+  margin-top: 10px;
 }
 
 .aside-links {
@@ -223,11 +258,59 @@ aside {
   text-decoration: underline;
 }
 
-.inflation-image {
+.pic-1 {
+  width: 100%;
+}
+
+.pic-2 {
+  height: auto;
+  max-width: 100%;
+  width: 945px;
+} 
+
+.pic-3 {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.inflation-image1 {
+  margin: 0 auto;
+  display: flex;
+  width: 63%;
+} 
+
+.inflation-image1 figcaption {
+  width: 75%;
+}
+
+.inflation-image2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.inflation-image3 {
+  margin: 0 auto;
+  display: flex;
+  width: 38%;
+}
+
+.inflation-image3 figcaption {
+  margin-bottom: 40px;
+}
+
+.frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.frame figcaption {
+  width: 90%;
+  margin-bottom: 50px;
 }
 
 .image-container-top {
@@ -252,13 +335,15 @@ aside {
   color: #333;
 }
 
-#inf-title {
+.inf-title {
   font-style: normal;
   font-size: 20px;
   color: #000;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
-#inf-desc {
+.inf-desc {
   color: #666;
   font-weight: lighter;
 }
@@ -275,14 +360,14 @@ aside {
   font-size: 13px;
 }
 
-#date-icons2 {
+.date-icons2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid  black;
 }
 
-#icons2 {
+.icons2 {
   display: flex;
   align-items: center;
   width: 250px;
@@ -314,7 +399,7 @@ aside {
   color: #000;
 }
 
-#inf-author {
+.inf-author {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-top: 20px;
