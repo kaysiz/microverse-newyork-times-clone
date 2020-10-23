@@ -39,26 +39,6 @@ p {
   margin-bottom: 20px;
 }
 
-.nav-section1 > a, .author, .date-icons, .free-articles, .aside-links, .inf-font, .inf-author, h3, .foo-links, .footer-nav-links {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.author-link, .date-icons, .article-font > p, .free-articles, .aside-links, .subtitles {
-  color: #333;
-}
-
-.nav-section1 > a, .buttons, .author, .free-articles, .free-articles > a, h3 {
-  font-weight: bold;
-}
-
-.nav-section1 > a, .author-link:hover, .free-articles > a, .aside-desc, .art-links:hover,.aside-links, .foo-links, .footer-nav-links {
-  text-decoration: none;
-}
-
-.aside-desc:hover, .art-links, .aside-links:hover, .foo-links:hover {
-  text-decoration: underline;
-}
-
 .main-nav {
   position: fixed;
   top: 0;
@@ -95,6 +75,13 @@ p {
   border-width: 0.05px;
 }
 
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  height: 25px;
+  line-height: 15px;
+}
+
 h1 {
   font-style: italic;
   color: #121212;
@@ -117,10 +104,6 @@ h1 {
 .author {
   font-size: 14px;
   margin-top: 50px;
-}
-
-.author-link {
-  text-decoration: underline rgb(194, 194, 194);
 }
 
 .date-icons {
@@ -146,7 +129,7 @@ h1 {
 .article-text {
   margin: 0 auto;
   width: 33%;
-} 
+}
 
 .article-font > p {
   font-size: 22px;
@@ -167,7 +150,7 @@ aside {
 }
 
 .edit-pics {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   border-bottom: 1px solid rgb(194, 194, 194);
   padding-bottom: 10px;
 }
@@ -224,7 +207,7 @@ aside {
   height: auto;
   max-width: 100%;
   width: 945px;
-} 
+}
 
 .pic-3 {
   width: 100%;
@@ -235,7 +218,7 @@ aside {
   margin: 0 auto;
   display: flex;
   width: 63%;
-} 
+}
 
 .inflation-image1 figcaption {
   width: 75%;
@@ -303,6 +286,8 @@ aside {
 }
 
 #button-3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 10px 100px;
   font-size: 13px;
 }
@@ -337,13 +322,6 @@ aside {
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 50px;
-}
-
-h3 {
-  color: rgb(0, 0, 0);
-  font-size: 12px;
-  height: 25px;
-  line-height: 15px;
 }
 
 .footer-links > li {
@@ -403,14 +381,83 @@ h3 {
   margin-left: 20%;
 }
 
-.sidebar-links > h3 {
+.sidebar-links {
   font-size: 19px;
-  border-bottom: 1px solid rgb(226, 226, 226);
-  padding: 15px 0px;
-  line-height: 23px;
-  color: #666;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sidebar-links > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container figcaption {
+  font-size: 10px;
+  color: #999;
+}
+
+.footer-headers {
+  font-size: 17px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.img-headers {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.img-headers > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-headers > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.author-link {
+  text-decoration: underline rgb(194, 194, 194);
+}
+
+.nav-section1 > a,
+.free-articles > a {
+  font-weight: bold;
+}
+
+.author,
+.date-icons,
+.free-articles,
+.aside-links,
+.inf-font,
+.inf-author,
+.foo-links,
+.footer-nav-links {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.author-link,
+.date-icons,
+.article-font > p,
+.free-articles,
+.aside-links,
+.subtitles {
+  color: #333;
+}
+
+.buttons,
+.author,
+.free-articles {
+  font-weight: bold;
+}
+
+.aside-desc,
+.aside-links,
+.foo-links,
+.footer-nav-links {
   text-decoration: none;
 }
