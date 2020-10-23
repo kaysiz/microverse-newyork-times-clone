@@ -3,9 +3,6 @@
 > This collaborative project consists of making a clone of a New York Times article page, by learning and applying different HTML & CSS technologies.
 This project is also intended to achieve good communication and collaboration between coding partners by doing "driver" and "navigator" switching roles and sharing ideas and opinions as they work on the same project
 
-## Screnshot
-![Screenshot](/Images/Project Screen Shot.png?raw=true)
-
 ## Built With
 - HTML5 Semantic tags
 - Flexbox
