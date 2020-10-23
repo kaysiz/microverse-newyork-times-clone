@@ -28,8 +28,6 @@ section {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
 }
 
 body {
@@ -41,40 +39,46 @@ p {
   margin-bottom: 20px;
 }
 
+.nav-section1 > a, .author, .date-icons, .free-articles, .aside-links, .inf-font, .inf-author, h3, .foo-links, .footer-nav-links {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.author-link, .date-icons, .article-font > p, .free-articles, .aside-links, .subtitles {
+  color: #333;
+}
+
+.nav-section1 > a, .buttons, .author, .free-articles, .free-articles > a, h3 {
+  font-weight: bold;
+}
+
+.nav-section1 > a, .author-link:hover, .free-articles > a, .aside-desc, .art-links:hover,.aside-links, .foo-links, .footer-nav-links {
+  text-decoration: none;
+}
+
+.aside-desc:hover, .art-links, .aside-links:hover, .foo-links:hover {
+  text-decoration: underline;
+}
+
 .main-nav {
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 40px;
   width: 100%;
-  background-color: white;
   border-bottom: 1px solid rgb(199, 199, 199);
-}
-
-.nav-section1 {
-  align-items: center;
-  width: 20%;
+  background-color: white;
+  z-index: 3;
 }
 
 .nav-section1 > a {
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
   font-size: 14.25px;
   color: #000;
-  font-weight: bold;
 }
 
 .nav-section1 > button {
   border: none;
   background-color: white;
-}
-
-.nav-section1 {
-  display: flex;
-  justify-content: space-between;
-  width: 180px;
 }
 
 .logo {
@@ -86,30 +90,21 @@ p {
   background-color: #567b95;
   color: white;
   font-size: 11px;
-  font-weight: bold;
   border-radius: 3px;
   padding: 9px;
   border-width: 0.05px;
 }
 
 h1 {
-  font-weight: 700;
   font-style: italic;
   color: #121212;
   margin-top: 100px;
   margin-bottom: 20px;
   font-size: 2.5rem;
-  line-height: 3rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-}
-
-.header-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-author {
@@ -120,25 +115,19 @@ h1 {
 }
 
 .author {
-  font-family: helvetica, arial, sans-serif;
   font-size: 14px;
-  font-weight: bold;
   margin-top: 50px;
 }
 
 .author-link {
   text-decoration: underline rgb(194, 194, 194);
-  color: #333;
-}
-
-.author-link:hover {
-  text-decoration: none;
 }
 
 .date-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 13px;
 }
 
 .icons {
@@ -146,11 +135,10 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  border: 5px solid white;
 }
 
 .icon-button {
-  border: 1px solid white;
+  border: none;
   border-radius: 50%;
   padding: 5px;
 }
@@ -162,7 +150,6 @@ h1 {
 
 .article-font > p {
   font-size: 22px;
-  color: #333;
   line-height: 30px;
 }
 
@@ -173,61 +160,39 @@ h1 {
 aside {
   float: right;
   position: absolute;
-  right:250px;
+  right: 250px;
   top: 1950px;
   width: 210px;
   height: 321px;
 }
 
 .edit-pics {
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
   border-bottom: 1px solid rgb(194, 194, 194);
   padding-bottom: 10px;
 }
 
 .aside-desc {
-  text-decoration: none;
   color: #000;
   font-weight: lighter;
   font-size: 13.4px;
 }
 
-.aside-desc:hover {
-  text-decoration: underline;
-}
-
-.span-date {
-  font-family: helvetica, arial, sans-serif;
-  font-size: 13px;
-  color: #333;
-}
-
 .art-links {
   color: #326891;
-  text-decoration: underline;
-}
-
-.art-links:hover {
-  text-decoration: none;
 }
 
 .free-articles {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: helvetica, arial, sans-serif;
   font-size: 14px;
-  font-weight: bold;
   margin: 50px;
   line-height: 20px;
-  color: #333;
 }
 
 .free-articles > a {
-  text-decoration: none;
   color: #326891;
-  font-weight: bold;
 }
 
 .aside-pics {
@@ -247,15 +212,8 @@ aside {
 }
 
 .aside-links {
-  text-decoration: none;
-  font-family: helvetica, arial, sans-serif;
   font-size: 13px;
-  color: #333;
   font-weight: lighter;
-}
-
-.aside-links:hover {
-  text-decoration: underline;
 }
 
 .pic-1 {
@@ -306,10 +264,6 @@ aside {
   margin-right: auto;
   width: 90%;
   margin-top: 50px;
-}
-
-.frame figcaption {
-  width: 90%;
   margin-bottom: 50px;
 }
 
@@ -332,7 +286,6 @@ aside {
 
 .subtitles {
   font-size: 20px;
-  color: #333;
 }
 
 .inf-title {
@@ -343,13 +296,7 @@ aside {
   margin-bottom: 0;
 }
 
-.inf-desc {
-  color: #666;
-  font-weight: lighter;
-}
-
 .inf-font {
-  font-family: arial, helvetica, sans-serif;
   font-size: 13px;
   font-weight: lighter;
   position: relative;
@@ -358,19 +305,6 @@ aside {
 #button-3 {
   padding: 10px 100px;
   font-size: 13px;
-}
-
-.date-icons2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid  black;
-}
-
-.icons2 {
-  display: flex;
-  align-items: center;
-  width: 250px;
 }
 
 .foot-links-cont {
@@ -400,7 +334,6 @@ aside {
 }
 
 .inf-author {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -409,8 +342,6 @@ aside {
 h3 {
   color: rgb(0, 0, 0);
   font-size: 12px;
-  font-weight: bold;
-  font-family: helvetica, arial, sans-serif;
   height: 25px;
   line-height: 15px;
 }
@@ -420,19 +351,13 @@ h3 {
 }
 
 .foo-links {
-  text-decoration: none;
   color: #000;
-  font-family: helvetica, arial, sans-serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 13px;
   font-weight: 500;
   height: 23px;
   line-height: 23px;
-}
-
-.foo-links:hover {
-  text-decoration: underline;
 }
 
 .footer-nav {
@@ -443,8 +368,6 @@ h3 {
 
 .footer-nav-links {
   color: #666;
-  font-family: helvetica, arial, sans-serif;
-  text-decoration: none;
   font-size: 10.5px;
 }
 
