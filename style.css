@@ -35,17 +35,80 @@ body {
   font-family: 'times new roman', times, serif;
 }
 
+h1 {
+  font-style: italic;
+  color: #121212;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
 p {
   margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.width {
+  width: 100%;
+}
+
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.color333 {
+  color: #333;
+}
+
+.color666 {
+  color: #666;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.margin0 {
+  margin: 0 auto;
+  color: #333;
+}
+
+.spacea {
+  justify-content: space-around;
+}
+
+.spaceb {
+  justify-content: space-between;
 }
 
 .main-nav {
   position: fixed;
   top: 0;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
   border-bottom: 1px solid rgb(199, 199, 199);
   background-color: white;
   z-index: 3;
@@ -54,6 +117,7 @@ p {
 .nav-section1 > a {
   font-size: 14.25px;
   color: #000;
+  text-decoration: none;
 }
 
 .nav-section1 > button {
@@ -75,25 +139,6 @@ p {
   border-width: 0.05px;
 }
 
-h3 {
-  color: rgb(0, 0, 0);
-  font-size: 12px;
-  height: 25px;
-  line-height: 15px;
-}
-
-h1 {
-  font-style: italic;
-  color: #121212;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-
 .header-author {
   margin-top: 25px;
   margin-left: auto;
@@ -107,15 +152,11 @@ h1 {
 }
 
 .date-icons {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 13px;
 }
 
 .icons {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 250px;
 }
@@ -127,12 +168,11 @@ h1 {
 }
 
 .article-text {
-  margin: 0 auto;
   width: 33%;
 }
 
 .article-font > p {
-  font-size: 22px;
+  font-size: 21px;
   line-height: 30px;
 }
 
@@ -145,7 +185,7 @@ aside {
   position: absolute;
   right: 250px;
   top: 1950px;
-  width: 210px;
+  width: 250px;
   height: 321px;
 }
 
@@ -153,12 +193,14 @@ aside {
   margin-bottom: 10px;
   border-bottom: 1px solid rgb(194, 194, 194);
   padding-bottom: 10px;
+  font-size: 13px;
 }
 
 .aside-desc {
-  color: #000;
+  color: #333;
   font-weight: lighter;
-  font-size: 13.4px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .art-links {
@@ -166,7 +208,6 @@ aside {
 }
 
 .free-articles {
-  display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 14px;
@@ -184,7 +225,6 @@ aside {
 }
 
 .aside-content {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -199,24 +239,17 @@ aside {
   font-weight: lighter;
 }
 
-.pic-1 {
-  width: 100%;
-}
-
 .pic-2 {
   height: auto;
-  max-width: 100%;
   width: 945px;
 }
 
 .pic-3 {
-  width: 100%;
   margin-top: 25px;
 }
 
 .inflation-image1 {
   margin: 0 auto;
-  display: flex;
   width: 63%;
 }
 
@@ -225,7 +258,6 @@ aside {
 }
 
 .inflation-image2 {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -233,7 +265,6 @@ aside {
 
 .inflation-image3 {
   margin: 0 auto;
-  display: flex;
   width: 38%;
 }
 
@@ -242,7 +273,6 @@ aside {
 }
 
 .frame {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -252,7 +282,6 @@ aside {
 
 .image-container-top {
   position: absolute;
-  display: flex;
   top: 150px;
 }
 
@@ -263,12 +292,11 @@ aside {
 
 .image-container-bottom {
   position: absolute;
-  display: flex;
   bottom: 20px;
 }
 
 .subtitles {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .inf-title {
@@ -292,15 +320,7 @@ aside {
   font-size: 13px;
 }
 
-.foot-links-cont {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
 .fig-span {
-  color: #666;
   line-height: 20px;
   font-size: 17px;
 }
@@ -315,7 +335,6 @@ aside {
 .inf-span {
   font-size: 11px;
   font-weight: 800;
-  color: #000;
 }
 
 .inf-author {
@@ -324,47 +343,14 @@ aside {
   margin-bottom: 50px;
 }
 
-.footer-links > li {
-  list-style: none;
-}
-
-.foo-links {
-  color: #000;
-  text-transform: capitalize;
-  width: 150px;
-  font-size: 13px;
-  font-weight: 500;
-  height: 23px;
-  line-height: 23px;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 400px 20px 400px;
-}
-
-.footer-nav-links {
-  color: #666;
-  font-size: 10.5px;
-}
-
-.logo2 {
-  width: 200px;
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 360px 20px 360px;
-}
-
 .main-container {
   margin-left: 20%;
   margin-right: 10%;
+  padding-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
+  border-bottom: 1px solid #333;
 }
 
 .container {
@@ -379,6 +365,10 @@ aside {
 
 .editor-section {
   margin-left: 20%;
+}
+
+.most-popular {
+  width: 320px;
 }
 
 .sidebar-links {
@@ -404,10 +394,9 @@ aside {
 }
 
 .img-headers {
-  font-size: 16px;
+  font-size: 19px;
   margin-bottom: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 600;
+  font-weight: lighter;
 }
 
 .img-headers > a {
@@ -429,35 +418,69 @@ aside {
   font-weight: bold;
 }
 
-.author,
-.date-icons,
-.free-articles,
-.aside-links,
-.inf-font,
-.inf-author,
-.foo-links,
-.footer-nav-links {
-  font-family: Arial, Helvetica, sans-serif;
+.footer-logo {
+  font-size: 11px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: 1px solid #666;
 }
 
-.author-link,
-.date-icons,
-.article-font > p,
-.free-articles,
-.aside-links,
-.subtitles {
-  color: #333;
-}
-
-.buttons,
-.author,
-.free-articles {
-  font-weight: bold;
-}
-
-.aside-desc,
-.aside-links,
-.foo-links,
-.footer-nav-links {
+.home-page > a {
   text-decoration: none;
+  color: #326891;
+}
+
+.logo2 {
+  width: 200px;
+}
+
+.footer-links {
+  margin-left: 17%;
+  margin-right: 17%;
+  font-size: 12.5px;
+  list-style: none;
+  line-height: 25px;
+}
+
+.footer-links2 {
+  margin-top: 30px;
+  margin-left: 22%;
+  margin-right: 22%;
+  font-size: 10.5px;
+}
+
+.footer-links2 > a {
+  color: #666;
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+.nav-section1 > a:hover {
+  text-decoration: underline;
+}
+
+.author-link:hover {
+  text-decoration: none;
+}
+
+.sidebar-links > a:hover {
+  text-decoration: underline;
+}
+
+.aside-desc:hover {
+  text-decoration: underline;
+}
+
+.art-links:hover {
+  text-decoration: none;
+}
+
+.footer-links2 > a:hover {
+  text-decoration: underline;
 }
