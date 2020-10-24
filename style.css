@@ -1,0 +1,486 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+strong,
+center,
+ul,
+li,
+article,
+aside,
+embed,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'times new roman', times, serif;
+}
+
+h1 {
+  font-style: italic;
+  color: #121212;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.width {
+  width: 100%;
+}
+
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.color333 {
+  color: #333;
+}
+
+.color666 {
+  color: #666;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.margin0 {
+  margin: 0 auto;
+  color: #333;
+}
+
+.spacea {
+  justify-content: space-around;
+}
+
+.spaceb {
+  justify-content: space-between;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  align-items: center;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  background-color: white;
+  z-index: 3;
+}
+
+.nav-section1 > a {
+  font-size: 14.25px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-section1 > button {
+  border: none;
+  background-color: white;
+}
+
+.logo {
+  width: 200px;
+  margin-top: 5px;
+}
+
+.buttons {
+  background-color: #567b95;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 9px;
+  border-width: 0.05px;
+}
+
+.header-author {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 626px;
+}
+
+.author {
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.date-icons {
+  align-items: center;
+  font-size: 13px;
+}
+
+.icons {
+  align-items: center;
+  width: 250px;
+}
+
+.icon-button {
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.article-text {
+  width: 33%;
+}
+
+.article-font > p {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.article-text > p {
+  margin-bottom: 0.9375rem;
+}
+
+aside {
+  float: right;
+  position: absolute;
+  right: 250px;
+  top: 1950px;
+  width: 250px;
+  height: 321px;
+}
+
+.edit-pics {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+.aside-desc {
+  color: #333;
+  font-weight: lighter;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.art-links {
+  color: #326891;
+}
+
+.free-articles {
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  margin: 50px;
+  line-height: 20px;
+}
+
+.free-articles > a {
+  color: #326891;
+}
+
+.aside-pics {
+  width: 75px;
+  margin: 10px;
+}
+
+.aside-content {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aside-content > h3 {
+  width: 110px;
+  margin-top: 10px;
+}
+
+.aside-links {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.pic-2 {
+  height: auto;
+  width: 945px;
+}
+
+.pic-3 {
+  margin-top: 25px;
+}
+
+.inflation-image1 {
+  margin: 0 auto;
+  width: 63%;
+}
+
+.inflation-image1 figcaption {
+  width: 75%;
+}
+
+.inflation-image2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.inflation-image3 {
+  margin: 0 auto;
+  width: 38%;
+}
+
+.inflation-image3 figcaption {
+  margin-bottom: 40px;
+}
+
+.frame {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.image-container-top {
+  position: absolute;
+  top: 150px;
+}
+
+.image-container-top > p,
+.image-container-bottom > p {
+  margin-right: 12px;
+}
+
+.image-container-bottom {
+  position: absolute;
+  bottom: 20px;
+}
+
+.subtitles {
+  font-size: 22px;
+}
+
+.inf-title {
+  font-style: normal;
+  font-size: 20px;
+  color: #000;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.inf-font {
+  font-size: 13px;
+  font-weight: lighter;
+  position: relative;
+}
+
+#button-3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 100px;
+  font-size: 13px;
+}
+
+.fig-span {
+  line-height: 20px;
+  font-size: 17px;
+}
+
+.fig-span-small {
+  color: #888;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.inf-span {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.inf-author {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.main-container {
+  margin-left: 20%;
+  margin-right: 10%;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 272px);
+  grid-gap: 15px;
+}
+
+.container-image {
+  width: 272px;
+}
+
+.editor-section {
+  margin-left: 20%;
+}
+
+.most-popular {
+  width: 320px;
+}
+
+.sidebar-links {
+  font-size: 19px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidebar-links > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container figcaption {
+  font-size: 10px;
+  color: #999;
+}
+
+.footer-headers {
+  font-size: 17px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.img-headers {
+  font-size: 19px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.img-headers > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-headers > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.author-link {
+  text-decoration: underline rgb(194, 194, 194);
+}
+
+.nav-section1 > a,
+.free-articles > a {
+  font-weight: bold;
+}
+
+.footer-logo {
+  font-size: 11px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: 1px solid #666;
+}
+
+.home-page > a {
+  text-decoration: none;
+  color: #326891;
+}
+
+.logo2 {
+  width: 200px;
+}
+
+.footer-links {
+  margin-left: 17%;
+  margin-right: 17%;
+  font-size: 12.5px;
+  list-style: none;
+  line-height: 25px;
+}
+
+.footer-links2 {
+  margin-top: 30px;
+  margin-left: 22%;
+  margin-right: 22%;
+  font-size: 10.5px;
+}
+
+.footer-links2 > a {
+  color: #666;
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+.nav-section1 > a:hover {
+  text-decoration: underline;
+}
+
+.author-link:hover {
+  text-decoration: none;
+}
+
+.sidebar-links > a:hover {
+  text-decoration: underline;
+}
+
+.aside-desc:hover {
+  text-decoration: underline;
+}
+
+.art-links:hover {
+  text-decoration: none;
+}
+
+.footer-links2 > a:hover {
+  text-decoration: underline;
+}
