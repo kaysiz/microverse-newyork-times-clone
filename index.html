@@ -391,15 +391,16 @@
                 <input type="email" name="User-email" id="User-email" maxlength="20" placeholder="Enter Email..." required>
             </fieldset>
             <fieldset>
-              <textarea name="textarea" placeholder="Type your comment here…" required maxlength="250" cols="50" rows="6"></textarea>
+              <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Type your comment here…" required maxlength="250" cols="50" rows="6"></textarea>
             </fieldset>
           </div>
           <div class="user-info2">
             <fieldset>
-              <label for="option">¿What is your overall opinion about this article?</label>
-                <input type="radio" name="opinion" value="positive" class="option">Positive
-                <input type="radio" name="opinion" value="neutral" class="option">Neutral
-                <input type="radio" name="opinion" value="negative" class="option">Negative
+              <label>¿What is your overall opinion about this article?</label>
+                <input type="radio" name="opinion" value="positive">Positive
+                <input type="radio" name="opinion" value="neutral">Neutral
+                <input type="radio" name="opinion" value="negative">Negative
             </fieldset>
             <fieldset>
               <input class="send-button" type="submit" name="submit" value="Send">

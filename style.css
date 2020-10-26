@@ -498,7 +498,7 @@ fieldset {
 
 .user-form label {
   display: block;
-  padding: 6px 0;
+  padding: 5px 0;
 }
 
 input::placeholder {
@@ -507,10 +507,8 @@ input::placeholder {
 }
 
 textarea {
-  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-  margin-top: 6px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 textarea::placeholder {
@@ -533,7 +531,8 @@ textarea::placeholder {
 }
 
 .user-info1 > fieldset {
-  width: 300px;align-content: center;
+  width: 300px;
+  align-content: center;
 }
 
 .user-info2 {
@@ -543,8 +542,7 @@ textarea::placeholder {
 }
 
 .send-button {
-  margin: 6px 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0;
   font-size: 15px;
   font-weight: bold;
   padding: 10px 10px;
