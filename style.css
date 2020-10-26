@@ -315,7 +315,6 @@ aside {
 
 #button-3 {
   margin-top: 30px;
-  margin-bottom: 30px;
   padding: 10px 100px;
   font-size: 13px;
 }
@@ -483,4 +482,73 @@ li > a:hover {
 
 .footer-links2 > a:hover {
   text-decoration: underline;
+}
+
+fieldset {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  margin: 6px;
+}
+
+.user-form {
+  margin: 30px auto;
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-form label {
+  display: block;
+  padding: 5px 0;
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 15px;
+}
+
+textarea::placeholder {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-info1 {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info > input {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.user-info1 > fieldset {
+  width: 300px;
+  align-content: center;
+}
+
+.user-info2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.send-button {
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 10px;
+  width: 69px;
+  border-radius: 4px;
+  background-color: #567b95;
+  color: white;
+  border-width: 0.05px;
 }
