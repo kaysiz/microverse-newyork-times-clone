@@ -137,6 +137,7 @@ li > a {
   border-radius: 3px;
   padding: 9px;
   border-width: 0.05px;
+  margin: 10px;
 }
 
 .header-author {
@@ -313,7 +314,8 @@ aside {
   position: relative;
 }
 
-#button-3 {
+#button-3,
+#modal-btn {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 10px 100px;
@@ -483,4 +485,80 @@ li > a:hover {
 
 .footer-links2 > a:hover {
   text-decoration: underline;
+}
+
+.article-footer-buttons {
+  display: flex;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
 }
